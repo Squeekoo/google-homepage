@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="shortcut icon" href="favicon.ico">
         <meta charset="UTF-8">
         <title>Google Homepage</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#Store">Store</a></li>
-            <li style="float:right"><a class="active" href="#gmail">Gmail</a></li>
-            <li style="float:right"><a class="active" href="#images">Images</a></li>
-        </ul>
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li class="navl"><a href="">About</a></li>
+                    <li class="navl"><a href="">Store</a></li>
+                    <li class="navr"><a href=""><button class="sign-in">Sign in</button></a></li>
+                    <li class="navr"><a href=""><img id="gridimg" src="https://raw.githubusercontent.com/kennethwang14/Google-Homepage-Clone/master/img/icons.png" alt="grid"></a></li>
+                    <li class="navr"><a href="">Images</a></li>
+                    <li class="navr"><a href="">Gmail</a></li>
+                </ul>
+            </nav>
+        </header>
         <div style="display" id="logo">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" style="padding-top:109px;" width="272"></div>
         <div class="wrapper">
-            <input type="text" class="input" placeholder="Search me">
-            <div class="searchbtn">
-                <img alt="Search Icon - Free Download, PNG and Vector" class="n3VNCb" src="https://img.icons8.com/ios/500/search--v1.png">
-            </div>
+            <img id="searchicon" src="https://www.seekpng.com/png/detail/65-659285_search-icon-transparent-background-material-design-magnifying-glass.png" alt="search icon">
+            <input type="text" class="input" placeholder="Search me please!">
         </div>
+        
+        <footer>
+            <ul class="footer">
+                <li class="lfooter"><a href="">Advertising</a></li>
+                <li class="lfooter"><a href="">Business</a></li>
+                <li class="lfooter"><a href="">How Search Works</a></li>
+                <li class="rfooter"><a href="">Privacy</a></li>
+                <li class="rfooter"><a href="">Terms</a></li>
+                <li class="rfooter"><a href="">Settings</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
