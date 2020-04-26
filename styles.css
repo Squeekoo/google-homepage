@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comic Neue', cursive;
 }
 
 body{
@@ -17,26 +17,44 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0,0,0,0.6);
+    background: rosybrown;
     max-width: 550px;
     width: 100%;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 3px;
+    border-radius: 25px;
     display: flex;
     justify-content: space-between;
 }
 
 .wrapper .input{
-    width: 85%;
-    padding: 15px 20px;
+    width: 100%;
+    padding: 15px 15px;
     border: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#searchicon{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 25px;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+img{
+    vertical-align: middle;
+    border-style: none;
+    background-color: transparent;
+    border-radius: 10px;
 }
 
 .searchbtn{
     background-color: white;
-    width: 10%;
+    width: 0;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
@@ -46,10 +64,82 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%)
-    font-size: 18px;
+    transform: translate(-50%,-50%);
+    size: 5px;
+    padding-top: 100px;
+    width: 272;
 }
 
 ul{
-    display: inline;
+    margin: 22px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul a{
+    color: black;
+    text-decoration: none;
+}
+
+ul a:hover{
+    text-decoration: underline;
+    color: rosybrown;
+}
+
+li{
+    font-family: 'Comic Neue', cursive;
+    font-size: 15px;
+    Position: relative;
+    Top: 50%;
+}
+
+li.navl{
+    float: left;
+    padding-left: 20px;
+}
+
+li.navr{
+    float: right;
+    padding-right: 20px;
+}
+
+button.sign-in{
+    background: rosybrown;
+    cursor: default;
+    text-decoration: none;
+    border: 1px solid black;
+    font-weight: bolder;
+    line-height: 28px;
+    padding: 0 12px;
+}
+
+footer{
+    color: rosybrown;
+    width: 100%;
+    Position: fixed;
+    Border: 1px solid;
+    Bottom: 0;
+    Left: 0;
+    Right: 0;
+}
+
+li.lfooter, li.rfooter{
+    Position: relative;
+    Bottom: 8px;
+}
+
+.lfooter{
+    float: left;
+    padding-left: 20px;
+}
+
+.rfooter{
+    float: right;
+    padding-right: 20px;
+}
+#logo{
+    position: absolute;
+    top: 16%;
+    left: 41%;
+    padding-top: 0px;
 }
